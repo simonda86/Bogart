@@ -16,7 +16,7 @@ You will need to create a .htaccess file with the following for your project.
 	RewriteRule ^(.+)$ index.php?uri=$1 [QSA,L]
 	
 ## Usage ##
-When you the library installed all you need to do is setup your routes and call the response function.
+When you have the library installed all you need to do is setup your routes and call the response function.
 
 	$bogart->get('/',function(){
 		echo 'Hello, World!';
