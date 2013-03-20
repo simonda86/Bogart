@@ -20,7 +20,7 @@ When you have the library installed all you need to do is setup your routes and 
 
 	$bogart->get('/',function(){
 		echo 'Hello, World!';
-	);
+	});
 	
 	$bogart->response();
 	
@@ -28,18 +28,18 @@ Bogart uses 4 HTTP methods for CRUD operations.
 
 	$bogart->get('/',function(){
 		echo 'List all items';
-	);
+	});
 	
 	$bogart->post('/',function(){
 		echo 'Create a new item';
-	);
+	});
 	
 	$bogart->put('/',function(){
 		echo 'Update an item';
-	);
+	});
 	$bogart->delete('/',function(){
 		echo 'Delete an item';
-	);
+	});
 
 Put and Delete are both actually POST requests with a hidden form _method element
 
@@ -53,4 +53,4 @@ You can use wilcards to recieve variables such (:num) and (:alpha), the variable
 	});
 	$bogart->get('/item/(:alpha)', function($name){
 		echo 'Item name: ' . $name;
-	}
+	});
