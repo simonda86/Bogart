@@ -1,5 +1,7 @@
 <?php
 
+namespace Bogart; 
+
 /**
  * Bogart
  *
@@ -8,7 +10,7 @@
  * @license http://opensource.org/licenses/mit-license.php
  *
  */
-class Bogart
+class Router
 {
 	private $_routes = array('GET' => array(), 'POST' => array(), 'PUT' => array(), 'DELETE' => array());
 	private $_methods = array('GET' => array(), 'POST' => array(), 'PUT' => array(), 'DELETE' => array());

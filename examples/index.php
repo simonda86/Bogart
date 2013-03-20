@@ -2,7 +2,7 @@
 
 require_once '../bogart.php';
 
-$bogart = new Bogart();
+$bogart = new Bogart\Router();
 
 $bogart->get('/',function(){
 	echo 'Hello, World!';
