@@ -55,7 +55,7 @@ class Bogart
 	
 	public function response()
 	{				
-		$request_uri = '/' . $_REQUEST['uri'];
+		$request_uri = $_SERVER['REQUEST_URI'];
 		$request_method = $_SERVER['REQUEST_METHOD'];
 
 		if($request_method == 'POST' && isset($_POST['_method']))
