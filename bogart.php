@@ -21,7 +21,7 @@ class Bogart
 	public function post($uri, $method)
 	{
 		// Process Wildcards
-		$uri = $this->_process_wilcards($uri);
+		$uri = $this->_process_wildcards($uri);
 		
 		$this->_routes['POST'][] = $uri;
 		$this->_methods['POST'][] = $method;
