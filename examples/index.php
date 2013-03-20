@@ -1,6 +1,6 @@
 <?php
 
-require_once '../bogart.php';
+require_once '../src/Router.php';
 
 $bogart = new Bogart\Router();
 

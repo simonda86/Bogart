@@ -1,0 +1,24 @@
+{
+    "name": "Bogart/Router",
+    "type": "library",
+    "description": "A simple RESTful router for PHP 5.3",
+    "keywords": ["Router","RESTful"],
+    "homepage": "https://github.com/simonda86/Bogart",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Simon Davies",
+            "email": "hello@simon-davies.name",
+            "homepage": "http://simon-davies.name",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Bogart": "src"
+        }
+    }
+}
