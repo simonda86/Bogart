@@ -74,9 +74,16 @@ class Bogart
 		foreach($this->_routes[$request_method] as $key => $route)
 		{
 			if(preg_match("#^$route$#", $request_uri, $matches))
-			{				
+			{
+				// Get the variables passed
+				$input = $matches;
+				unset($input[0]); // Remove the full pattern
+
+				// Merge array to reset index
+				$input = array_merge($input);
+
 				// If a match is found call the matching method and return true
-				call_user_func($this->_methods[$request_method][$key], $matches[1]);
+				call_user_func($this->_methods[$request_method][$key], $input);
 				return true;
 			}
 		}
